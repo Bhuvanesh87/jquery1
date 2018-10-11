@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+        <script>
+            $(document).ready(function () 
+            {
+                $("#imgs").click(function ()
+                {
+                        $("#imgs").animate(
+                                {
+                                    left: '250px',
+                                    height: '500px',
+                                    width: '500px'
+                        });
+
+                       $("#imgs").click(function () {
+                        $("#imgs").animate(
+                            {
+                                left:'-00',
+                                height: '150px',
+                                width: '150px'
+                            });
+                    });
+                });
+            });
+        </script>
+        <style>
+        #imgs {
+            position: absolute;
+        }
+        </style>                     
+
+                          
+       <img id="imgs" src="F:\Bizruntime\prac\week4\vscode\jquery\bhuvan.jpg" style="height: 200px; width:200px"/>
+   
+</body>
+</html>

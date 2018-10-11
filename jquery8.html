@@ -1,0 +1,21 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+     <button>Click me to hide</button>
+     <p>This is the paragraph to hide</p>
+
+     <script>
+       $('document').ready(function()
+       {
+            $('button').click(function()
+            {
+                  $('p').hide('slow',function()
+                  {
+                      alert("This msg will be displayed afer hiding of the paragraph");
+ 
+                  });
+            });      
+       });     
+     </script>
+</body>

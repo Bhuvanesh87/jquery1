@@ -1,0 +1,19 @@
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  
+    <p id="p1">This is Heartly congratulations</h2><br/><br/>
+  <button>Click me to slide</button>
+  <script>
+    $(document).ready(function()
+    {
+        $("button").click(function()
+        {
+           $("#p1").css("color","red")
+           .slideUp(2000)
+           .slideDown(2000);
+        });
+    }); 
+  </script>  
+</body>
